@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap);
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Shadows Into Light';
+    background-color: #44e2e2;
+    overflow-x: hidden;
+}
+nav{
+    background-color: #0c1b38;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a{
+    color: white;
+    cursor: pointer; 
+    font-size: large;  
+}
+h1 a{
+    display:flex;
+    justify-content: center;
+    margin-top: 35px;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 a:hover{
+    background-color: #0c1b38;
+    color: white;
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:hover{
+    background-color: #44e2e2;
+    color: white;
+    font-weight: 700;
+}
+.container{
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-width: 100%;
+    
+    
+}
+.card{
+    background-color: #0C1B38;
+    width: 350px;
+    height: 320px;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+}
+.card-img{
+    position: relative;
+    width: 100%;
+    height: 260px; 
+    border-radius: 30px;
+}
+p{
+    position: absolute;
+    bottom: 20px;
+    text-align: justify;
+    width: 300px;
+    visibility: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.visible{
+    visibility: visible;
+}
+.invisilbe{
+    visibility: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
